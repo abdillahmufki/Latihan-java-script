@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tipe Data Object</title>
+  </head>
+  <body>
+    <script>
+      // Mengubah property / attribute
+
+      const orang = { nama: "Abdillah Mufki", alamat: "Bandung", umur: 21 };
+
+      //   orang["nama"] = "Abdillah Mufki";
+      //   orang["umur"] = 23;
+      //   orang["alamat"] = "Jl. Kebon Jeruk No. 1";
+
+      console.info(`Nama: ${orang.nama}`);
+      console.info(`Umur: ${orang.umur}`);
+      console.info(`Alamat: ${orang.alamat}`);
+
+      console.table(orang);
+
+      delete orang["umur"];
+
+      console.table(orang);
+    </script>
+  </body>
+</html>
